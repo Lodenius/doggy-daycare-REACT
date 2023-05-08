@@ -46,7 +46,7 @@ export const store = {
         name: "Ludde",
         sex: "male",
         breed: "greyhound",
-        img: "https://images.dog.ceo/breeds/greyhound-italian/n02091032_907.jpg",
+        img: "https://images.unsplash.com/photo-1483434748604-140edba26886?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nJTIwZ3JleWhvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60",
         present: true,
         age: 5,
         chipNumber: "HLM936015",
@@ -60,7 +60,7 @@ export const store = {
         name: "Doris",
         sex: "female",
         breed: "groenendael",
-        img: "https://images.dog.ceo/breeds/groenendael/n02105056_2194.jpg",
+        img: "https://images.unsplash.com/flagged/photo-1569267755220-627158bb2a76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nJTIwZ3JvZW5lbmRhZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
         present: true,
         age: 8,
         chipNumber: "ELN562847",
@@ -74,7 +74,7 @@ export const store = {
         name: "Sigge",
         sex: "male",
         breed: "husky",
-        img: "https://images.dog.ceo/breeds/husky/n02110185_8860.jpg",
+        img: "https://images.unsplash.com/photo-1465505486239-73576daab293?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZG9nJTIwaHVza3l8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60",
         present: false,
         age: 7,
         chipNumber: "HAA378909",
@@ -98,5 +98,19 @@ export const store = {
             phoneNumber: "0705449389",
         }
         },
+        {
+        name: "Henry",
+        sex: "male",
+        breed: "beagle",
+        img: "https://images.unsplash.com/photo-1512546321483-c0468b7b8a95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nJTIwYmVhZ2xlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60",
+        present: true,
+        age: 2,
+        chipNumber: "GBE894256",
+        owner :{
+            name: "Mary",
+            lastName: "Wilmer",
+            phoneNumber: "0778449389",
+        }
+        }
     ]
 }

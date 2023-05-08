@@ -1,0 +1,13 @@
+@import "../variables";
+
+.startPage {
+    h1 {
+        @include text-shadowing;
+    }
+    button {
+    @include button;
+        &:hover {
+        @include button-hover;
+    }
+    }
+}

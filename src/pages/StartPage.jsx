@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import styles from './dogs.module.css'
+import style from './StartPage.module.scss'
 
 function StartPage() {
     const navigate = useNavigate();
 
     return ( 
-        <main>
+        <main className={style.startPage}>
             <h1>Welcome to Doggy Daycare</h1>
-            <button className={styles.button} onClick={() => navigate('/ourdogs')}>OUR DOGS</button>
+            <button onClick={() => navigate('/ourdogs')}>OUR DOGS</button>
         </main>
      );
 }

@@ -1,0 +1,30 @@
+@import "../variables";
+
+.dogDetails {
+    display: flex;
+    flex-direction: column;
+    button {
+        @include button;
+        width: 6rem;
+    }
+}
+
+.button {
+    background-color: #4C8FAB;
+    color: white;
+    margin: 1rem;
+}
+
+.imgDetails{
+    height: 400px;
+}
+
+.doggyPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem ;
+}
+
+.ourDogsH1 {
+    margin-bottom: 0;
+}

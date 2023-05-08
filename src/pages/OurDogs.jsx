@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import styles from './dogs.module.css'
+import style from './OurDogs.module.scss'
 import DogCard from '../Components/DogCard';
 import FilterDogs from '../Components/FilterDogs';
 import { useState, useCallback } from 'react';
@@ -20,11 +20,11 @@ function OurDogs() {
     }, [ourDogs, present])
 
     return ( 
-        <section>
-            <h1  className={styles.ourDogsH1} onClick={() => navigate(-1)}>Our Dogs</h1>
-            <button className={styles.button} onClick={() => setFilteredDogs(ourDogs)}>Show all dogs</button>
-            <button className={styles.button} onClick={filterDogs}>Present dogs</button>
-            <section className={styles.doggyPage}>
+        <section className={style.ourDogs}>
+            <h1 onClick={() => navigate(-1)}>Our Dogs</h1>
+            <button onClick={() => setFilteredDogs(ourDogs)}>Show all dogs</button>
+            <button onClick={filterDogs}>Present dogs</button>
+            <section className={style.ourDogs__cards}>
             {
                 filteredDogs.map((dog, i) => <DogCard key={i} data={dog}/>)
             }

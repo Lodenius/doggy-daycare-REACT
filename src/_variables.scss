@@ -1,0 +1,20 @@
+$primaryBlue: #4C8FAB;
+$primaryOrange: #FED253;
+
+@mixin button {
+    background-color: $primaryBlue;
+    color: white;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+@mixin text-shadowing {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+@mixin button-hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-style: italic;
+}

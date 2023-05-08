@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import styles from './dogs.module.css'
+import style from './DogDetails.module.scss'
 import { useNavigate } from 'react-router-dom';
 
 function DogDetails() {
@@ -8,9 +8,9 @@ function DogDetails() {
     const dog = location.state.data;
 
     return ( 
-        <section>
-            <button className={styles.button} onClick={() => navigate(-1)}>Back</button>
-            <img src={dog.img} className={styles.imgDetails} />
+        <section className={style.dogDetails}>
+            <button onClick={() => navigate(-1)}>Back</button>
+            <img src={dog.img}/>
             <h1>{dog.name}</h1>
             <p>{dog.breed}</p>
             <p>Owner: {dog.owner.name}</p>

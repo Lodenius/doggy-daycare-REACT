@@ -1,0 +1,21 @@
+@import "../variables";
+
+
+.ourDogs {
+    h1 {
+        @include text-shadowing;
+        margin-bottom: 1rem;
+    }
+    button {
+        @include button;
+        &:hover {
+            @include button-hover;
+        }
+    }
+    &__cards {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem ;
+    }   
+}

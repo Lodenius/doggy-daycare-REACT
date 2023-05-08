@@ -1,16 +1,16 @@
 @import "../variables";
 
 .dogCard {
-    height: 350px;
-    width: 250px;
-    border: 2px solid rgba(128, 128, 128, 0.607);
+    height: 22rem;
+    width: 15.5rem;
+    border: 2px solid $primaryBlue;
     margin: auto;
     margin-bottom: 1rem;
     background-color: white;
     color: black;
     &__figure{
-        height: 200px;
-        width: 250px;
+        height: 12.5rem;
+        width: 15.5rem;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -20,14 +20,26 @@
         }
     }
     &__info {
+
+        width: 80%;
+        margin: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        h2 {
-            margin-bottom: 0;
+        flex-direction: column;
+        &__nameage{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0;
         }
-        p {
-            margin-bottom: 0;
+        &__sexbreed{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0;
+        }
+        &__owner {
+            margin: 0;
         }
     }
 }

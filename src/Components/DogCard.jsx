@@ -9,14 +9,16 @@ function DogCard({data}) {
                     <img src={data.img}/>
                 </div>
                 <section className={style.dogCard__info}>
-                    <h2>{data.name}</h2>
-                    <h2>{data.age}y/o</h2>
+                    <section className={style.dogCard__info__nameage}>
+                        <h2>{data.name}</h2>
+                        <h3>{data.age}y/o</h3>
+                    </section>
+                    <section className={style.dogCard__info__sexbreed}>
+                        <p>{data.sex}</p>
+                        <p>{data.breed}</p>
+                    </section>
+                    <p className={style.dogCard__info__owner}>Owner: {data.owner.name}</p>
                 </section>
-                <section className={style.dogCard__info}>
-                    <p>{data.sex}</p>
-                    <p>{data.breed}</p>
-                </section>
-                <p>Owner: {data.owner.name}</p>
             </article>
         </NavLink>
      );
